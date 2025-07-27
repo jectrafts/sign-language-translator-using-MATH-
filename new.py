@@ -36,7 +36,7 @@ text2 = ''
 x1 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
 y1 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
 def a_true(x_r, y_r):
-    if (y_r[7]>y_r[6] and y_r[11]>y_r[10] and y_r[15]>y_r[14] and y_r[19]>y_r[18]) and (y_r[8]>y_r[7] and y_r[12]>y_r[11] and y_r[16]>y_r[15] and y_r[20]>y_r[19])and x_r[5]>x_r[4] and x_r[3]>x_r[4]:
+    if (y_r[7]>y_r[6] and y_r[11]>y_r[10] and y_r[15]>y_r[14] and y_r[19]>y_r[18]) and (y_r[8]>y_r[7] and y_r[12]>y_r[11] and y_r[16]>y_r[15] and y_r[20]>y_r[19])and y_r[5]>y_r[4] and y_r[3]>y_r[4]:
         return 1
 
 def FU_true(x_r, y_r):
@@ -295,13 +295,13 @@ with mp_hands.Hands(
 
 
             if a_true(x_r, y_r):
-                text = 'a'
+                text = 'A'
 
             if FU_true(x_r, y_r):
                 text='fuck you'
 
             if b_true(x_r, y_r):
-                text= 'b'
+                text= 'B'
             if reset_true(x_l, y_l):
                 text= ''
                 text2=''
